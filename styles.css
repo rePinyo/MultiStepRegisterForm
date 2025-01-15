@@ -188,7 +188,7 @@ li {
 @media (max-width: 640px){
     main{
         max-width: 500px;
-        width: 80%;      
+        width: 90%;      
     }
 }
 @media (min-width:641px) and (max-width: 1280px){
