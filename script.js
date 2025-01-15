@@ -78,7 +78,7 @@ function switchToSummary(e) {
             <div class="shadow"></div>
             <p class="heading">Summary</p>
             <p><span class="gray">Name: </span> ${userInfo.name}</p>
-            <p><span class="gray">Email: </span> ${userIno.email}</p><br>
+            <p><span class="gray">Email: </span> ${userInfo.email}</p><br>
             <p class="gray">Topics:</p>
             <ul class="topics-list">${
               selectedTopics.map(topic => `<li>${topic}</li>`).join('')}
