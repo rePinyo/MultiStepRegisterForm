@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Multi-step Register Form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multi-step Register Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <form action="" class="tab" id="tab1">
+            <!--First Tab = Name and Email-->
+            <div class="shadow"></div>
+            <p class="heading">Register</p>
+            <label for="name">Full name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name"
+                style="color: white; font-size: 12px;" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                style="color: white; font-size: 12px;" required><br>
+
+            <button type="submit" id="sub">Continue</button>
+        </form>
+        <form action="" class="tab" id="tab2">
+            <!--Second Tab = Pick a Topic-->
+            <div class="shadow"></div>
+            <p class="heading">Which topics are you interested in?</p>
+            <div class="topic">
+                <label for="software">Software Development
+                <input type="checkbox" name="software" id="software" value="software">
+                </label><br>
+
+                <label for="user">User Experience
+                <input type="checkbox" name="user" id="user" value="user">
+                </label><br>
+
+                <label for="graphic">Graphic Design
+                <input type="checkbox" name="graphic" id="graphic" value="graphic">
+                </label>
+
+                <button type="submit" id="sub">Continue</button>
+            </div>
+        </form>
+        <!--Third Tab = Summary-->
+        <form action="" class="tab" id="tab3">
+            <div class="shadow"></div>
+            <p class="heading">Summary</p>
+            <p><span class="gray">Name: </span>Emily Johnson</p>
+            <p><span class="gray">Email: </span>emily@emilyjohnsonstl.com</p><br>
+            <p class="gray">Topics:</p>
+            <ul class="topics-list">
+                <li>User Experience</li>
+                <li>Graphic Design</li>
+            </ul>
+            <button type="submit" id="sub">Submit</button>
+        </form>
+        <div class="step-container">
+            <small class="step-text">Step 1 of 3</small>
+            <div class="step-indicators">
+                <span class="step current"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
